@@ -3,7 +3,7 @@
   
 ## Usage:
   ```sh
-	git clone https://github.com/kbkpbot/cpuinfo
+	v install --git https://github.com/kbkpbot/cpuinfo
   ```
   Then, in your code, import it.
   ```v
