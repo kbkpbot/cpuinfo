@@ -599,7 +599,7 @@ pub fn (mut c CPUInfo_X86) frequencies() {
 	// cases, e.g., `2.50GHz` or `1300MHz`; this parser will accept other
 	// sizes.
 	model := c.brand_name
-	hz := model.index_last('Hz') or { return }
+	hz := model.last_index('Hz') or { return }
 	mut multiplier := i64(0)
 	if model[hz - 1] == `M` {
 		multiplier = 1000 * 1000
